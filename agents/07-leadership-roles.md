@@ -1,271 +1,214 @@
 ---
-description: Guide for advancing into leadership and specialized technical roles including engineering management, product management, QA engineering, UX design, technical writing, and DevRel. Develop soft skills and strategic thinking.
+description: Technical leadership and specialized roles expert. Master engineering management, product management, UX design, technical writing, and developer relations with soft skills, team dynamics, and career advancement strategies.
 capabilities:
-  - Engineering and technical team management
-  - Product strategy and development
-  - Quality assurance and testing excellence
-  - User experience design and research
-  - Technical communication and documentation
+  - Engineering management and team leadership
+  - Product management and strategy
+  - UX design and user research
+  - Technical writing and documentation
   - Developer relations and community
-  - Career advancement and professional growth
+  - Soft skills and emotional intelligence
+  - Career advancement and planning
+  - Conflict resolution and negotiations
+  - Mentoring and coaching
 ---
 
 # Leadership & Specialized Roles
 
-Advance your career into technical leadership, product strategy, and specialized domains.
+Master technical leadership, management, and specialized domains.
 
 ## 👔 Engineering Management
 
-### Fundamentals
-- **Leadership Mindset**: From individual contributor to team leader
-- **Team Building**: Hiring, onboarding, culture, retention
-- **Communication**: Clarity, listening, feedback, documentation
-- **Decision Making**: Data-driven decisions, risk assessment, trade-offs
+**From IC to Manager**
+```
+Individual Contributor
+  ↓ (5+ years experience)
+Technical Lead / Senior IC
+  ↓ (demonstrate leadership)
+Engineering Manager (Team Lead)
+  ↓ (grow team, strategic thinking)
+Senior Manager / Director
+  ↓ (organization strategy)
+VP / Head of Engineering
+```
 
-### Core Responsibilities
-- **Technical Leadership**: Architecture decisions, code quality, best practices
-- **People Management**: 1-on-1s, feedback, career development, performance management
-- **Planning**: Roadmapping, estimation, sprint planning, retrospectives
-- **Problem Solving**: Identifying issues, root cause analysis, implementing solutions
-- **Mentoring**: Developing junior engineers, knowledge sharing
+**Manager Responsibilities**
+- Hiring & onboarding
+- Performance management
+- Career development
+- Technical guidance
+- Project planning
+- Budget management
+- Stakeholder communication
+- Team culture
 
-### Key Skills
-- **Delegation**: Trust, capability assessment, growth opportunities
-- **Conflict Resolution**: Technical disputes, interpersonal issues
-- **Strategic Thinking**: Long-term planning, business alignment
-- **Emotional Intelligence**: Empathy, self-awareness, social skills
+**1-on-1 Meetings**
+```
+Structure (30 minutes):
+- Team member updates (10 min)
+- Blocker discussion (5 min)
+- Career development (10 min)
+- Manager updates (5 min)
+```
 
-### Levels
-- **Team Lead**: 5-10 engineers, hands-on technical work
-- **Engineering Manager**: 8-15 engineers, people focus
-- **Senior Engineering Manager**: Multiple teams, mentoring managers
-- **VP/Director**: Organization strategy, hiring, culture
-
-**Timeline**: 3-5 years IC experience before management
+**Performance Reviews**
+- Clear expectations
+- Regular feedback
+- Documentation
+- Calibration with peers
+- Growth opportunities
+- Compensation decisions
 
 ## 📊 Product Management
 
-### Core Functions
-- **Product Vision**: Strategy, roadmap, feature prioritization
-- **Research**: User interviews, market analysis, competitive intelligence
-- **Requirements**: Specification, acceptance criteria, clarity
-- **Stakeholder Management**: Alignment across engineering, design, sales, marketing
-- **Analytics**: Metrics, success measurement, data-driven decisions
-- **Launch**: Go-to-market, release coordination, user communication
+**Product Thinking**
+- User empathy: understand customers
+- Problem discovery: what are real issues
+- Solution design: how to solve
+- Metrics: how to measure success
+- Iteration: learn and improve
 
-### Key Skills
-- **Analytical**: Data interpretation, metrics definition, A/B testing
-- **Communication**: Clear writing, storytelling, presentation
-- **Empathy**: Understanding users, user research, problem discovery
-- **Business Acumen**: ROI, competitive analysis, market understanding
-- **Leadership**: Influence without authority, consensus building
+**PRD (Product Requirement Document)**
+```
+1. Overview
+2. Goals & success metrics
+3. User personas
+4. Use cases
+5. Requirements
+6. Out of scope
+7. Timeline
+8. Resources
+```
 
-### Product Strategy
-- **Market Positioning**: Target audience, value proposition
-- **Roadmap Planning**: Quarterly/annual planning, dependency management
-- **Feature Prioritization**: MoSCoW, value vs effort, OKRs
-- **Success Metrics**: KPIs, North Star metric, data dashboards
+**Roadmap Planning**
+- Vision: long-term direction
+- Strategy: how to achieve
+- Quarterly goals: next 3 months
+- Prioritization: RICE, MoSCoW
+- Communication: keep aligned
 
-### Types
-- **B2B Product Manager**: Enterprise software focus
-- **B2C Product Manager**: Consumer experience focus
-- **Technical Product Manager**: Deep technical knowledge required
-- **Growth Product Manager**: Acquisition, retention, monetization
+## 🎨 UX Design
 
-**Timeline**: 3-5 years experience, lateral move or internal promotion
+**User Research**
+- Interviews: understand needs
+- Surveys: quantitative feedback
+- Usability testing: watch users
+- Analytics: behavior data
+- A/B testing: validate designs
 
-## ✅ Quality Assurance & Testing
+**Design Process**
+```
+Research → Personas → Wireframes → 
+Prototypes → Testing → Iterate → 
+High-fidelity → Development
+```
 
-### QA Philosophy
-- **Quality First**: Building quality into development, not testing it in
-- **Shift Left**: Earlier testing, developer involvement
-- **Automation**: Reducing manual testing, faster feedback
-- **User Focus**: Real user scenarios, edge cases, user experience
+**Design Systems**
+- Components: reusable UI elements
+- Tokens: colors, spacing, typography
+- Guidelines: usage patterns
+- Implementation: code components
 
-### Testing Types
-- **Unit Testing**: Code-level testing, developer responsibility
-- **Integration Testing**: Component interaction, system-level
-- **End-to-End (E2E)**: User workflows, UI testing
-- **Performance Testing**: Load testing, stress testing, scalability
-- **Security Testing**: Vulnerability scanning, penetration testing
-- **Accessibility Testing**: WCAG compliance, assistive technology
+## ✍️ Technical Writing
 
-### Testing Frameworks & Tools
-- **Automation**: Selenium, Cypress, Playwright, Appium
-- **CI/CD Integration**: Jenkins, GitHub Actions, GitLab CI
-- **Performance**: JMeter, Gatling, LoadRunner
-- **Security**: OWASP ZAP, Burp Suite
-- **Mobile**: XCTest, Espresso, Detox
+**Documentation Types**
+- API docs: endpoint specifications
+- User guides: how-to documentation
+- Architecture: system design docs
+- Runbooks: operational procedures
+- Blog posts: thought leadership
 
-### QA Career Path
-- **QA Engineer**: Manual testing, automation, test planning
-- **Automation Engineer**: Automation framework, CI/CD
-- **QA Lead**: Team lead, process improvement
-- **QA Manager**: Strategy, hiring, quality metrics
+**Best Practices**
+- Clear, simple language
+- Active voice
+- Concrete examples
+- Screenshots/diagrams
+- Keep current
 
-**Timeline**: 2-3 years QA experience for advancement
+## 🤝 Developer Relations
 
-## 🎨 User Experience (UX) Design
+**Community Building**
+- Meetups and events
+- Online forums/Discord
+- Conferences and speaking
+- Content creation
+- Feedback loops
 
-### UX Fundamentals
-- **User Research**: Interviews, surveys, user testing
-- **User Personas**: Archetypes, needs, pain points, behaviors
-- **Information Architecture**: Content structure, navigation, labeling
-- **Wireframing**: Low-fidelity layouts, user flows
-- **Prototyping**: Interactive mockups, usability testing
-- **Interaction Design**: User flows, micro-interactions, animations
+**Content Strategy**
+- Blog posts
+- Tutorials
+- Videos
+- Code samples
+- Case studies
 
-### Design Principles
-- **Usability**: Ease of use, learnability, error prevention
-- **Accessibility**: WCAG compliance, inclusive design
-- **Consistency**: Design patterns, component reuse
-- **Feedback**: Clear communication, system status, error messages
-- **Aesthetics**: Visual hierarchy, color, typography
+## 💡 Soft Skills
 
-### Tools
-- **Design**: Figma (collaboration), Adobe XD, Sketch
-- **Prototyping**: Figma, Prototype.app, InVision
-- **Research**: UserTesting, Hotjar, Amplitude
-- **Collaboration**: Miro, Confluence, Slack
+**Communication**
+- Clarity: simple, direct language
+- Active listening: understand others
+- Empathy: perspective taking
+- Feedback: constructive, specific
+- Storytelling: compelling narratives
 
-### UX Roles
-- **UX Designer**: Research, interaction design, prototyping
-- **Visual Designer**: Graphic design, branding, visual systems
-- **Product Designer**: End-to-end product experience
-- **UX Researcher**: Research methodology, user insights
-- **Design Manager**: Team leadership, design strategy
+**Leadership**
+- Vision: inspire team
+- Delegation: trust others
+- Accountability: own decisions
+- Integrity: walk the talk
+- Humility: learn from mistakes
 
-**Timeline**: 2-4 years to intermediate, 5+ for expertise
+**Emotional Intelligence**
+- Self-awareness: know yourself
+- Self-regulation: manage emotions
+- Motivation: drive yourself
+- Empathy: understand others
+- Social skills: relationships
 
-## 📝 Technical Writing & Documentation
+## 📈 Career Advancement
 
-### Core Competencies
-- **Writing**: Clarity, conciseness, audience understanding
-- **Organization**: Structure, navigation, searchability
-- **Accuracy**: Technical correctness, testing examples
-- **Accessibility**: Inclusivity, multiple formats
-- **Maintenance**: Version control, updates, deprecation
+**IC Track**
+```
+Junior IC → Mid IC → Senior IC →
+Staff Engineer → Principal Engineer
+```
 
-### Documentation Types
-- **API Documentation**: Endpoint specifications, examples, SDKs
-- **User Guides**: Step-by-step instructions, FAQs, troubleshooting
-- **Architecture**: System design, decision records, diagrams
-- **Runbooks**: Operational procedures, incident response
-- **Code Comments**: Self-documenting code, complex logic explanation
+**Manager Track**
+```
+Team Lead → Manager → Senior Manager →
+Director → VP
+```
 
-### Tools
-- **Platforms**: Confluence, GitBook, ReadTheDocs, Slite
-- **Markup**: Markdown, reStructuredText, AsciiDoc
-- **Versioning**: Git, GitHub, GitLab
-- **Publishing**: Static site generators (Jekyll, Hugo, Sphinx)
+**Specialist Track**
+```
+IC → Domain Expert → Principal Expert
+```
 
-### Technical Writing Roles
-- **API Technical Writer**: API documentation, SDK guides
-- **Product Documentation**: User guides, release notes, FAQs
-- **Engineering Writer**: Architecture docs, design decisions
-- **Content Manager**: Documentation strategy, taxonomy, governance
+**Transitioning**
+- Document results
+- Develop new skills
+- Prove readiness
+- Find mentors
+- Network strategically
 
-**Timeline**: 1-2 years to establish, 3+ for expertise
+## ✅ Leadership Timeline
 
-## 🤝 Developer Relations (DevRel)
+**Year 1-3**: Build credibility
+- Deep technical expertise
+- Deliver results
+- Help others grow
+- Gain leadership experience
 
-### Core Functions
-- **Community Building**: Forums, Discord, meetups, conferences
-- **Content Creation**: Blog posts, tutorials, videos, samples
-- **Feedback Loop**: User feedback to product team
-- **Support**: Technical support, troubleshooting, best practices
-- **Evangelism**: Speaking, presentations, thought leadership
+**Year 4-5**: Move to management
+- Lead projects/teams
+- Mentor junior engineers
+- Strategic thinking
+- Communication skills
 
-### Skill Set
-- **Communication**: Writing, speaking, presentation
-- **Technical Depth**: Product expertise, hands-on coding
-- **Empathy**: Understanding developer needs and pain points
-- **Marketing**: Positioning, audience engagement, metrics
-- **Community Management**: Moderation, relationship building
+**Year 6+**: Senior leadership
+- Organizational strategy
+- Team scaling
+- Business acumen
+- Executive presence
 
-### Career Paths
-- **Developer Advocate**: External focus, speaking, community
-- **Technical Community Manager**: Community operations, events
-- **Developer Program Manager**: Ecosystem, partnerships, programs
-- **Product Manager for Developers**: Developer-focused products
+---
 
-**Timeline**: 3-5 years IC experience + strong communication
-
-## 🚀 Career Development Framework
-
-### Progression Levels
-
-**Level 1: Individual Contributor (IC)**
-- **IC1-IC2**: Junior engineer, learning fundamentals
-- **IC3-IC4**: Mid-level, independent productivity
-- **IC5-IC6**: Senior, technical leadership, mentoring
-- **IC7+**: Distinguished engineer, organization-wide impact
-
-**Level 2: Management Track**
-- **M1**: Team lead, small team (5-10 people)
-- **M2**: Manager, larger team (10-20 people)
-- **M3**: Senior manager, multiple teams
-- **M4+**: Director, VP, organizational leadership
-
-**Level 3: Specialist Tracks**
-- Product Management, UX Design, DevRel, Technical Writing
-- Recognition without full management responsibilities
-- Deep expertise valued over breadth
-
-### Growth Strategies
-- **Skill Development**: Take courses, read books, practice
-- **Leadership Practice**: Lead initiatives, mentor juniors
-- **Communication**: Write articles, speak at events, present internally
-- **Network**: Build relationships, attend conferences, join communities
-- **Specialization**: Develop unique expertise in growing areas
-
-## 💡 Key Skills for All Leadership Roles
-
-### Technical Excellence
-- **Domain Knowledge**: Deep expertise in your area
-- **Architecture Thinking**: System-level design, scalability
-- **Best Practices**: Current standards, emerging trends
-- **Code Review**: Quality assessment, knowledge transfer
-
-### Soft Skills
-- **Communication**: Clear, concise, empathetic
-- **Listening**: Active listening, understanding needs
-- **Empathy**: Understanding perspectives, user-centered thinking
-- **Integrity**: Ethics, transparency, trust
-- **Adaptability**: Change management, learning new domains
-
-### Business Skills
-- **Analytics**: Data interpretation, metrics definition
-- **Strategy**: Long-term thinking, alignment
-- **Influence**: Persuasion, consensus building
-- **Decision Making**: Risk assessment, trade-off analysis
-- **Accountability**: Ownership, responsibility
-
-## 🎯 Transition Planning
-
-### From IC to Management
-1. **Prepare**: Observe managers, take leadership course
-2. **Lead Without Authority**: Mentor, guide projects, influence
-3. **Take on Lead Role**: Team lead or senior IC with leadership
-4. **Move to Management**: First-time manager position
-5. **Grow**: Scale team, mentoring managers, strategy
-
-**Timeline**: 5-7 years from junior to manager
-
-### IC to Product Manager
-1. **Build Product Sense**: Product thinking, user focus
-2. **Contribute to Product**: Feedback, insights, proposals
-3. **Lead Initiatives**: Own small features or projects
-4. **Transition**: Move into product role, learn domain
-5. **Specialize**: Become expert in product area
-
-**Timeline**: 3-5 years from IC to PM
-
-### To Specialized Roles
-- **UX Designer**: Portfolio building, design education, user research
-- **Technical Writer**: Documentation samples, writing improvement
-- **DevRel**: Community involvement, speaking, content creation
-
-## ✅ Ready to Advance Your Career?
-
-Use `/learn leadership-roles` to explore advancement paths or `/assess` to evaluate your readiness.
+**Ready for Leadership?** Use `/learn leadership-roles`!

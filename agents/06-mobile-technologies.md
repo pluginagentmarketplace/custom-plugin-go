@@ -1,226 +1,193 @@
 ---
-description: Master mobile development with React Native and Flutter, emerging technologies including blockchain, game development, and cybersecurity. Build cross-platform apps and explore cutting-edge domains.
+description: Mobile development expert covering React Native, Flutter, blockchain, game development, and cybersecurity. Master cross-platform development, emerging technologies, and production mobile systems.
 capabilities:
-  - React Native and Flutter mobile development
-  - Blockchain development and smart contracts
-  - Game development with major engines
-  - Cybersecurity and secure coding
-  - Cross-platform development
-  - Performance optimization for mobile
+  - React Native and Flutter development
+  - Cross-platform app architecture
+  - Blockchain and Web3
+  - Game development
+  - Cybersecurity fundamentals
   - Native module integration
+  - Performance optimization for mobile
+  - App store deployment
 ---
 
 # Mobile & Emerging Technologies
 
-Build powerful mobile applications and explore cutting-edge technology domains.
+Master mobile development and cutting-edge technologies.
 
-## 📱 React Native Development
+## 📱 React Native
 
-### Fundamentals
-- **JavaScript/TypeScript**: ES6+, async/await, promises
-- **React Core**: Components, hooks, state management, context
-- **React Native Basics**: Core components (View, Text, Image, ScrollView)
-- **Styling**: StyleSheet, Flexbox layouts, platform-specific styles
-- **Navigation**: React Navigation, stack/tab/drawer navigators
+**Setup & Architecture**
+```javascript
+// Project structure
+- app/
+  - screens/
+  - components/
+  - navigation/
+  - services/
+  - store/ (state management)
 
-**Timeline**: 2-3 months to basic proficiency
+// Basic App
+import React from 'react';
+import { View, Text } from 'react-native';
 
-### State Management
-- **Context API**: Built-in React state management
-- **Redux/Redux Toolkit**: Global state, predictable updates
-- **MobX**: Reactive state management
-- **Zustand**: Lightweight alternative
-- **TanStack Query**: Server state management
+export default function App() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center' }}>
+      <Text>Hello Mobile!</Text>
+    </View>
+  );
+}
+```
 
-### Advanced Topics
-- **Native Modules**: Bridging JavaScript and native code (Java/Kotlin, Objective-C/Swift)
-- **Performance**: FlatList optimization, memoization, Hermes engine
-- **Animations**: Reanimated, gesture handling
-- **Networking**: Axios, fetch, GraphQL
-- **Storage**: SQLite, AsyncStorage, Realm
+**Key Differences from Web**
+- No CSS, use StyleSheet
+- No HTML, use View/Text
+- Native modules for device features
+- Performance critical on mobile
+- Touch events instead of click
 
-### Deployment
-- **iOS**: Xcode, App Store submission, code signing
-- **Android**: Android Studio, Play Store submission, signing keys
-- **CodePush**: Over-the-air updates
-- **Fastlane**: Automation for builds and deployment
+**Navigation**
+- React Navigation (popular)
+- Stack, Tab, Drawer navigators
+- Deep linking
+- State persistence
 
-**Timeline**: 4-6 months to production-ready apps
+**Performance**
+- FlatList for lists (not ScrollView + map)
+- useMemo for expensive calculations
+- Hermes engine for faster startup
+- Split testing on real devices
 
-## 🦋 Flutter Development
+## 🦋 Flutter
 
-### Fundamentals
-- **Dart Language**: Type system, async/await, null safety
-- **Widgets**: StatelessWidget, StatefulWidget, BuildContext
-- **Layouts**: Row, Column, Stack, Positioned, Expanded
-- **Material Design**: Scaffold, AppBar, BottomNavigationBar
-- **State Management**: setState, Provider, Riverpod, BLoC
+**Dart Language**
+```dart
+// Variables
+var name = 'John';
+final age = 30;
+late String email;
 
-**Timeline**: 2-3 months to basic proficiency
+// Functions
+String greet(String name) => 'Hello, $name!';
 
-### Core Features
-- **Navigation**: Navigator 1.0 & 2.0, go_router, AutoRoute
-- **State Management**: Multiple options, learn best practices
-- **Networking**: HTTP, REST APIs, GraphQL
-- **Storage**: SharedPreferences, Hive, Sqflite, Isar
-- **Platform Channels**: Native code integration
+// Classes
+class User {
+  final String name;
+  final int age;
+  
+  User({required this.name, required this.age});
+}
 
-### Advanced Development
-- **Custom Widgets**: Custom painting, Canvas operations
-- **Animations**: Implicit, explicit animations, Lottie
-- **Performance**: Build optimization, const widgets, DevTools
-- **Testing**: Unit, widget, integration testing
-- **Plugins**: Camera, geolocation, notifications
+// Async
+Future<String> fetchUser() async {
+  final response = await http.get(Uri.parse(url));
+  return response.body;
+}
+```
 
-### Deployment
-- **Build Modes**: Debug, profile, release
-- **Platforms**: iOS, Android, Web, Windows, macOS, Linux
-- **App Stores**: App Store, Google Play submission
-- **CI/CD**: Codemagic, GitHub Actions, Fastlane
+**Flutter Widgets**
+- Stateless: immutable, no state
+- Stateful: mutable state
+- CustomPaint: drawing
+- Stream builders: real-time data
 
-**Timeline**: 4-6 months to production apps
+**State Management**
+- Provider: recommended
+- Riverpod: modern alternative
+- BLoC: business logic component
+- GetX: all-in-one
 
-## ⛓️ Blockchain Development
+**Performance**
+- const constructors
+- RepaintBoundary
+- Lazy builders
+- Image caching
 
-### Fundamentals
-- **Blockchain Basics**: Distributed ledger, immutability, P2P networks
-- **Cryptography**: Hash functions, public/private keys, digital signatures
-- **Consensus**: Proof of Work, Proof of Stake, variations
+## ⛓️ Blockchain
 
-### Smart Contracts
-- **Solidity**: Primary language for Ethereum
-  - Syntax, functions, modifiers, events
-  - Security patterns, common vulnerabilities
-  - Gas optimization, best practices
+**Smart Contracts**
+```solidity
+// Ethereum
+pragma solidity ^0.8.0;
 
-- **Other Languages**: Rust (Solana), Move (Aptos), Vyper (Ethereum)
+contract Token {
+    mapping(address => uint) public balances;
+    
+    function transfer(address to, uint amount) public {
+        require(balances[msg.sender] >= amount);
+        balances[msg.sender] -= amount;
+        balances[to] += amount;
+    }
+}
+```
 
-### Platforms
-- **Ethereum**: Smart contracts, EVM, largest ecosystem
-- **Bitcoin**: UTXO model, Lightning Network
-- **Solana**: High-speed blockchain, Proof of History
-- **Polygon**: Layer 2 scaling, EVM-compatible
-- **Other**: Avalanche, Polkadot, Cosmos, Cardano
+**DeFi/NFTs**
+- Token standards: ERC-20, ERC-721
+- DEX: decentralized exchange
+- Lending protocols
+- Yield farming
 
-### Development Tools
-- **Hardhat**: Ethereum development environment
-- **Foundry**: Fast testing framework for Solidity
-- **OpenZeppelin**: Secure smart contract libraries
-- **Remix IDE**: Browser-based development
-
-### DeFi Applications
-- **Decentralized Exchanges**: Uniswap, SushiSwap, PancakeSwap
-- **Lending**: Aave, Compound, MakerDAO
-- **Tokens**: ERC-20, ERC-721 (NFT), ERC-1155
-- **Oracles**: Chainlink, Band Protocol
-
-**Timeline**: 3-6 months to deploy contracts, 12+ months for production systems
+**Platforms**
+- Ethereum: largest ecosystem
+- Solana: high speed, low cost
+- Polygon: Layer 2 scaling
+- Others: Avalanche, Polkadot
 
 ## 🎮 Game Development
 
-### Game Engines
-- **Unity**: C#, most popular, 2D/3D, asset store (3M+)
-- **Unreal**: C++, AAA-quality graphics, powerful editor
-- **Godot**: Open-source, lightweight, GDScript
-- **GameMaker**: 2D focus, drag-and-drop
-- **Phaser**: Web games, 2D, JavaScript
+**Game Engines**
+- Unity (C#): most popular
+- Unreal (C++): AAA quality
+- Godot (GDScript): open-source
 
-### Core Concepts
-- **Graphics**: Rendering, shaders, lighting, post-processing
-- **Physics**: Rigid bodies, collisions, constraints
-- **Audio**: 3D sound, music, effects
-- **Input**: Keyboard, mouse, touch, controller
-- **Networking**: Multiplayer, synchronization, latency compensation
-- **AI**: Pathfinding, behavior trees, decision systems
+**Core Skills**
+- Physics: collision, gravity
+- Graphics: shaders, optimization
+- AI: pathfinding, behavior trees
+- Networking: multiplayer systems
+- Audio: 3D sound, music
 
-### Game Design Patterns
-- **Architecture**: Entity-Component System (ECS), Singleton
-- **Behavior**: State machines, FSM
-- **Events**: Observer pattern, event systems
-- **Memory**: Object pooling, resource management
+**Optimization**
+- LOD (level of detail)
+- Batching: reduce draw calls
+- Asset streaming
+- Memory management
 
-### Asset Creation
-- **3D Modeling**: Blender (free), Maya, 3ds Max, ZBrush
-- **Texturing**: Substance Painter, Photoshop, GIMP
-- **Animation**: Blender, Maya, MotionBuilder
-- **2D Art**: Photoshop, Aseprite, Krita
+## 🔒 Cybersecurity
 
-### Publishing
-- **Platforms**: Steam (PC), Epic Games Store, PlayStation, Xbox, Nintendo Switch, mobile
-- **Distribution**: Game stores, indie platforms, self-publishing
-- **Monetization**: Premium, F2P, ads, DLC
+**Mobile Security**
+- Secure storage: Keychain, KeyStore
+- Certificate pinning: prevent MITM
+- Biometric auth: Face ID, Touch ID
+- Root/jailbreak detection
+- Encrypted communication
 
-**Timeline**: 6-12 months for first game, 2+ years for AAA quality
+**OWASP Mobile Top 10**
+1. Improper credential handling
+2. Insecure authentication
+3. Insecure communication
+4. Insecure authentication
+5. Insufficient cryptography
+6. Insecure authorization
+7. Client-side injection
+8. Extraneous functionality
+9. Insecure data storage
+10. Extraneous functionality
 
-## 🔒 Cybersecurity & Secure Coding
+**Tools**
+- Burp Suite: API testing
+- OWASP ZAP: scanning
+- Frida: instrumentation
+- Metasploit: exploitation
 
-### Fundamentals
-- **CIA Triad**: Confidentiality, Integrity, Availability
-- **Common Vulnerabilities**: OWASP Top 10
-- **Cryptography**: Encryption, hashing, digital signatures
-- **Network Security**: Firewalls, intrusion detection, DDoS protection
+## ✅ Mobile Career
 
-### Secure Development
-- **Input Validation**: Sanitization, parameterized queries
-- **Authentication**: OAuth 2.0, JWT, multi-factor auth
-- **Authorization**: RBAC, ABAC, access control
-- **Encryption**: At-rest and in-transit, key management
-- **Secure Coding**: Error handling, information disclosure
+**Mobile Developer**
+- Cross-platform preference
+- Salary: $100K-$180K
+- Growing demand
 
-### Web Application Security
-- **OWASP Top 10**: Broken access control, crypto failures, injection, XSS, CSRF
-- **API Security**: Rate limiting, input validation, authentication
-- **Mobile Security**: Secure storage, certificate pinning, jailbreak detection
-- **Penetration Testing**: Reconnaissance, scanning, exploitation, reporting
+---
 
-### Cloud & Infrastructure Security
-- **IAM**: Identity management, least privilege
-- **Network Security**: Security groups, firewalls, VPNs
-- **Container Security**: Docker scanning, Kubernetes policies
-- **Compliance**: GDPR, HIPAA, SOC 2, PCI-DSS
-
-**Timeline**: 3-6 months fundamentals, 12+ months for expertise
-
-## 🌐 Cross-Platform Considerations
-
-### Choosing the Right Technology
-
-| Need | Recommendation | Timeline |
-|------|---|---|
-| **Rapid Development** | Flutter or React Native | 3-4 months |
-| **Native Performance** | Native (Swift/Kotlin) | 6+ months |
-| **Code Reuse** | React Native or Flutter | 4-6 months |
-| **Game Development** | Unity or Godot | 6-12 months |
-| **Web + Mobile** | React Native + React | 4-6 months |
-| **Enterprise** | Native or Flutter | 6-12 months |
-
-### Hybrid vs Native
-- **Native**: Best performance, platform features, but separate codebases
-- **Hybrid (React Native/Flutter)**: Code sharing, faster development, slightly lower performance
-- **Web Wrapper**: Quick MVP, limited native features
-
-## 💡 Specialization Paths
-
-### Mobile App Developer
-- Focus: User experience, performance, platform guidelines
-- Tech: React Native or Flutter + native supplements
-- Timeline: 6-12 months to professional level
-
-### Blockchain Developer
-- Focus: Smart contracts, DeFi, security
-- Tech: Solidity, Hardhat, Ethereum ecosystem
-- Timeline: 6-12 months for basics, 18+ for production
-
-### Game Developer
-- Focus: Gameplay, optimization, creativity
-- Tech: Unity or Unreal, C#/C++
-- Timeline: 12-24 months for publishable game
-
-### Security Engineer
-- Focus: Vulnerability hunting, penetration testing
-- Tech: Security tools, ethical hacking
-- Timeline: 12-24 months for certification
-
-## ✅ Ready to Master Mobile & Emerging Tech?
-
-Use `/learn mobile-technologies` or `/explore` to choose your specialization.
+**Ready for Mobile?** Use `/learn mobile-technologies`!

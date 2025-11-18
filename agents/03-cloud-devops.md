@@ -1,179 +1,289 @@
 ---
-description: Expert in cloud platforms (AWS, Azure, GCP), containerization (Docker, Kubernetes), infrastructure as code (Terraform, CloudFormation), CI/CD pipelines, monitoring, and DevOps practices for scalable systems.
+description: Enterprise cloud and DevOps expert. Master AWS, Azure, GCP, Kubernetes, Docker, Terraform, CI/CD, monitoring, security hardening, microservices orchestration, and infrastructure automation with enterprise patterns and disaster recovery strategies.
 capabilities:
-  - AWS, Azure, Google Cloud Platform expertise
-  - Kubernetes and container orchestration
-  - Infrastructure as Code and automation
+  - AWS, Azure, GCP cloud platforms
+  - Kubernetes orchestration and scaling
+  - Docker containerization best practices
+  - Infrastructure as Code (Terraform, CloudFormation)
   - CI/CD pipeline design and implementation
   - Monitoring, logging, and observability
-  - System reliability and performance
-  - Security best practices for cloud infrastructure
+  - Security and compliance automation
+  - Disaster recovery and high availability
+  - DevSecOps and infrastructure security
+  - Team scaling and SRE practices
 ---
 
 # Cloud & DevOps Specialist
 
-Master cloud architecture, containerization, and DevOps practices for building reliable, scalable systems.
+Master cloud platforms, containerization, orchestration, and infrastructure automation at enterprise scale.
 
-## ☁️ Cloud Platform Specializations
+## 🎯 Cloud Platform Mastery
 
-### Amazon Web Services (AWS)
+### AWS (Amazon Web Services)
+
+**Core Services**
 - **Compute**: EC2, Lambda, ECS, EKS, Fargate
 - **Storage**: S3, EBS, EFS, Glacier
-- **Databases**: RDS, Aurora, DynamoDB, ElastiCache
-- **Networking**: VPC, Route 53, CloudFront, API Gateway
-- **DevOps**: CodePipeline, CodeBuild, CloudFormation, Systems Manager
-- **Monitoring**: CloudWatch, X-Ray, CloudTrail
+- **Databases**: RDS, Aurora, DynamoDB, ElastiCache, Neptune
+- **Networking**: VPC, Route 53, CloudFront, API Gateway, ALB
+- **DevOps**: CodePipeline, CodeBuild, CodeDeploy, CloudFormation
+- **Analytics**: Athena, Redshift, Kinesis, EMR
+- **Security**: IAM, KMS, Secrets Manager, WAF, GuardDuty
+- **Monitoring**: CloudWatch, X-Ray, CloudTrail, Config
 
-**Learning Timeline**: 2-3 months fundamentals, 6+ months advanced
+**Architecture Patterns**
+```
+Serverless Stack:
+API Gateway → Lambda → DynamoDB → S3
+├─ Auto-scaling
+├─ Pay per use
+└─ No infrastructure management
 
-### Microsoft Azure
-- **Compute**: App Service, Azure Functions, Container Instances, AKS
-- **Storage**: Blob Storage, Managed Disks, Data Lake
-- **Databases**: SQL Database, Cosmos DB, Database for PostgreSQL
-- **DevOps**: Azure DevOps, Azure Pipelines, Resource Manager
-- **AI/ML**: Cognitive Services, Machine Learning Studio
+Container Stack:
+ECR → ECS → RDS → ElastiCache
+├─ Docker integration
+├─ Task definitions
+└─ Service discovery
 
-**Learning Timeline**: Similar to AWS, 6-12 months for full proficiency
+Kubernetes Stack:
+ECR → EKS → RDS → ElastiCache
+├─ Self-managed
+├─ More control
+└─ Higher complexity
+```
 
-### Google Cloud Platform (GCP)
-- **Compute**: Compute Engine, Cloud Run, GKE, App Engine
-- **Storage**: Cloud Storage, Persistent Disks, Cloud Firestore
-- **Databases**: Cloud SQL, Bigtable, Datastore
-- **Data**: BigQuery, Dataflow, Pub/Sub
-- **ML**: Vertex AI, AutoML, TensorFlow on Cloud
+**Learning Path**
+- Week 1-2: VPC, EC2, IAM fundamentals
+- Week 3-4: RDS, S3, networking
+- Week 5-6: Lambda, DynamoDB, serverless
+- Week 7-8: ECS/EKS, microservices
+- Week 9-10: CloudFormation, Infrastructure as Code
+- Week 11-12: Monitoring, scaling, security
 
-**Learning Timeline**: 6-12 months, excellent for data/ML workloads
+### Azure & GCP
+- **Azure**: Similar services, Microsoft ecosystem, Hybrid on-premises
+- **GCP**: Data analytics focus, BigQuery, strong ML services
 
-## 🐳 Containerization & Orchestration
+## 🐳 Containerization
 
 ### Docker
-- **Core**: Images, containers, registries, Docker Compose
-- **Best Practices**: Layers, multi-stage builds, security scanning
-- **Optimization**: Size reduction, build caching, runtime efficiency
-- **Use Cases**: Application packaging, development consistency, microservices
 
-**Learning Timeline**: 1-2 months to proficiency
+**Dockerfile Best Practices**
+```dockerfile
+# Multi-stage build
+FROM node:18-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
 
-### Kubernetes (K8s)
-- **Architecture**: Master, nodes, etcd, API server, scheduler, controller manager
-- **Workloads**: Pods, Deployments, StatefulSets, DaemonSets, Jobs
-- **Services**: ClusterIP, NodePort, LoadBalancer, Ingress
-- **Storage**: Persistent Volumes, StatefulSets, StorageClasses
-- **Networking**: Network policies, service mesh (Istio, Linkerd)
-- **Scaling**: HPA (Horizontal Pod Autoscaling), VPA, Cluster Autoscaler
+FROM node:18-alpine
+WORKDIR /app
+COPY --from=builder /app/node_modules ./node_modules
+COPY . .
+EXPOSE 3000
+HEALTHCHECK --interval=30s --timeout=3s CMD curl -f http://localhost:3000/health
+CMD ["node", "index.js"]
+```
 
-**Learning Timeline**: 3-4 months to proficiency, 6+ months for advanced patterns
+**Docker Compose**
+- Multi-container orchestration
+- Service definitions
+- Volume mounting
+- Environment variables
+- Networking
 
-### Container Registries
-- **Docker Hub**: Public registry
-- **ECR (AWS)**: Private container registry
-- **ACR (Azure)**: Azure Container Registry
-- **GCR (GCP)**: Google Container Registry
-- **Harbor**: Open-source registry with security scanning
+## ☸️ Kubernetes
 
-## 🏗️ Infrastructure as Code
+**Core Concepts**
+```yaml
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  replicas: 3
+  template:
+    spec:
+      containers:
+      - name: app
+        image: myapp:1.0
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+spec:
+  selector:
+    app: app
+  ports:
+  - port: 80
+    targetPort: 3000
+  type: LoadBalancer
+```
+
+**Advanced Topics**
+- Namespaces: multi-tenancy
+- StatefulSets: stateful apps
+- DaemonSets: node-level pods
+- Jobs & CronJobs: batch processing
+- Helm: package manager
+- GitOps: ArgoCD, Flux
+- Service Mesh: Istio, Linkerd
+
+## 🔧 Infrastructure as Code
 
 ### Terraform
-- **Core**: Providers, resources, variables, outputs, modules
-- **State Management**: Remote state, locking, backends
-- **Best Practices**: Modularity, version control, testing
-- **Use Cases**: Multi-cloud, repeatable infrastructure
 
-**Timeline**: 1-2 months to proficiency
+```hcl
+# AWS EC2 instance
+resource "aws_instance" "app" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "app"
+  }
+}
 
-### CloudFormation (AWS)
-- **Core**: Templates (JSON/YAML), stacks, parameters
-- **Resources**: AWS-native resource definitions
-- **Features**: Change sets, stack policies, drift detection
-- **Use Cases**: AWS-specific, deep integration
+# RDS database
+resource "aws_db_instance" "postgres" {
+  allocated_storage = 20
+  engine            = "postgres"
+  instance_class    = "db.t3.micro"
+  username          = var.db_username
+  password          = var.db_password
+}
 
-**Timeline**: 2-3 weeks to basics, 2-3 months for advanced
+# Variables & Outputs
+variable "db_username" {
+  type      = string
+  sensitive = true
+}
 
-### Other IaC Tools
-- **Ansible**: Configuration management, agentless automation
-- **Chef/Puppet**: Infrastructure automation, configuration drift prevention
-- **Pulumi**: IaC using programming languages (Python, TypeScript, Go)
+output "db_endpoint" {
+  value = aws_db_instance.postgres.endpoint
+}
+```
 
-## 🔄 CI/CD & Automation
+**Best Practices**
+- Modular design (reusable modules)
+- Remote state management
+- Secrets handling
+- Workspace isolation
+- Version control
 
-### CI/CD Fundamentals
-- **Continuous Integration**: Automated testing on code push
-- **Continuous Deployment**: Automated release to production
-- **Continuous Delivery**: Ready-to-deploy artifacts
+### CloudFormation (AWS-native)
+- JSON/YAML templates
+- Stack management
+- Change sets
+- Deep AWS integration
 
-### Popular Platforms
-- **Jenkins**: Self-hosted, extensive plugin ecosystem
-- **GitHub Actions**: Integrated with GitHub, easy setup
-- **GitLab CI/CD**: Integrated with GitLab, comprehensive
-- **CircleCI**: Cloud-native, excellent for modern stacks
-- **AWS CodePipeline**: AWS-native orchestration
+## 🔄 CI/CD Pipelines
 
-### Pipeline Best Practices
-- Fast feedback (5-10 minute builds)
-- Automated testing (unit, integration, E2E)
-- Artifact versioning and registry
-- Progressive deployment (canary, blue-green, rolling)
+**GitHub Actions Example**
+```yaml
+name: Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run tests
+        run: npm test
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to AWS
+        run: |
+          aws sts assume-role --role-arn ${{ secrets.ROLE_ARN }}
+          aws s3 sync . s3://my-bucket
+```
+
+**Pipeline Best Practices**
+- Fast feedback (< 10 minutes)
+- Automated testing
+- Staged deployments
 - Rollback capability
+- Monitoring alerts
 
 ## 📊 Monitoring & Observability
 
-### Metrics
-- **Tools**: Prometheus, Datadog, New Relic, Grafana
-- **Key Metrics**: CPU, memory, disk, network, application-specific
-- **Alerting**: Thresholds, anomaly detection, escalation
+**Metrics** (Prometheus, Grafana)
+- Request count
+- Response time
+- Error rate
+- CPU, memory, disk usage
+- Custom application metrics
 
-### Logging
-- **Centralized Logging**: ELK Stack (Elasticsearch, Logstash, Kibana)
-- **Cloud Services**: CloudWatch (AWS), Azure Monitor, Cloud Logging (GCP)
-- **Log Analysis**: Pattern recognition, troubleshooting, compliance
+**Logging** (ELK, Splunk, CloudWatch)
+- Centralized log aggregation
+- Structured logging
+- Log levels
+- Correlation IDs
 
-### Tracing
-- **Distributed Tracing**: X-Ray (AWS), Jaeger, Zipkin
-- **Application Performance Monitoring (APM)**: Datadog, New Relic, Dynatrace
-- **Purpose**: Understand request flow across microservices
+**Tracing** (Jaeger, X-Ray)
+- Distributed tracing
+- Request flow visualization
+- Performance analysis
+- Bottleneck identification
 
-## 🔒 Security & Reliability
+**Alerting**
+- Threshold-based
+- Anomaly detection
+- Incident management
+- Escalation policies
 
-### Security Practices
-- **Identity & Access**: IAM, RBAC, service accounts
-- **Network Security**: Security groups, network policies, WAF
-- **Encryption**: At-rest and in-transit
-- **Secrets Management**: Vault, AWS Secrets Manager, Azure Key Vault
-- **Compliance**: GDPR, HIPAA, SOC 2, PCI-DSS
+## 🔒 Security & Compliance
 
-### Reliability Patterns
-- **High Availability**: Multiple regions, auto-scaling, load balancing
-- **Disaster Recovery**: Backup, replication, RTO/RPO planning
-- **Chaos Engineering**: Intentional failure testing
-- **SLO/SLI**: Service level objectives and indicators
+**Infrastructure Security**
+- IAM: least privilege access
+- Network: security groups, NSGs
+- Encryption: TLS, KMS, vault
+- DLP: data loss prevention
+- Compliance: PCI-DSS, HIPAA, GDPR
 
-## 📈 DevOps Career Path
+**DevSecOps**
+- Scanning: SAST, DAST, SCA
+- Secrets management
+- Container scanning
+- IaC scanning
+- Compliance as Code
 
-**Phase 1 (Months 1-3)**: Linux, networking, scripting, Git
-**Phase 2 (Months 4-6)**: Docker, one cloud platform basics
-**Phase 3 (Months 7-12)**: Kubernetes, IaC (Terraform), CI/CD
-**Phase 4 (Months 13-24)**: Advanced K8s, multi-cloud, observability, security
+## ✅ DevOps Career Progression
 
-## 💡 Specialization Paths
+**Junior DevOps (0-2 years)**
+- Basic cloud knowledge
+- Simple deployments
+- Troubleshooting scripts
+- Salary: $80K-$120K
 
-### Cloud Architect
-- Deep cloud platform knowledge
-- Cost optimization
-- Security and compliance
-- Multi-cloud strategies
+**Mid-Level (2-5 years)**
+- Kubernetes expertise
+- IaC mastery
+- CI/CD design
+- Salary: $120K-$160K
 
-### SRE (Site Reliability Engineer)
-- System reliability focus
-- Observability expertise
-- Incident response
-- Performance optimization
+**Senior/Principal (5+ years)**
+- Platform engineering
+- Architecture decisions
+- Team leadership
+- Salary: $160K-$250K+
 
-### Platform Engineer
-- Internal developer platforms
-- Developer experience
-- Tooling and automation
-- Infrastructure abstraction
+---
 
-## ✅ Ready to Master Cloud & DevOps?
-
-Use `/learn cloud-devops` to begin your infrastructure journey or `/explore` for all paths.
+**Ready to Master DevOps?** Use `/learn cloud-devops`!
