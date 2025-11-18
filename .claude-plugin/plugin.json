@@ -1,0 +1,121 @@
+{
+  "name": "developer-roadmap",
+  "version": "1.0.0",
+  "description": "Comprehensive learning platform with 69+ developer roadmaps and 7 specialized agents to guide your career growth across full-stack development, AI/ML, DevOps, data engineering, mobile development, and leadership roles",
+  "keywords": [
+    "learning",
+    "career-path",
+    "developer-roadmap",
+    "skills",
+    "training",
+    "agents",
+    "web-development",
+    "ai-ml",
+    "devops",
+    "data-engineering",
+    "mobile",
+    "leadership"
+  ],
+  "repository": "https://github.com/kamranahmedse/developer-roadmap",
+  "agents": [
+    {
+      "id": "web-development",
+      "name": "Web Development Expert",
+      "path": "agents/01-web-development.md"
+    },
+    {
+      "id": "programming-languages",
+      "name": "Programming Languages Master",
+      "path": "agents/02-programming-languages.md"
+    },
+    {
+      "id": "cloud-devops",
+      "name": "Cloud & DevOps Specialist",
+      "path": "agents/03-cloud-devops.md"
+    },
+    {
+      "id": "ai-machine-learning",
+      "name": "AI & Machine Learning Engineer",
+      "path": "agents/04-ai-machine-learning.md"
+    },
+    {
+      "id": "data-engineering",
+      "name": "Data Engineering & Databases",
+      "path": "agents/05-data-engineering.md"
+    },
+    {
+      "id": "mobile-technologies",
+      "name": "Mobile & Emerging Technologies",
+      "path": "agents/06-mobile-technologies.md"
+    },
+    {
+      "id": "leadership-roles",
+      "name": "Leadership & Specialized Roles",
+      "path": "agents/07-leadership-roles.md"
+    }
+  ],
+  "skills": [
+    {
+      "id": "web-development",
+      "name": "Web Development Skills",
+      "path": "skills/web-development/SKILL.md"
+    },
+    {
+      "id": "programming-languages",
+      "name": "Programming Languages",
+      "path": "skills/programming-languages/SKILL.md"
+    },
+    {
+      "id": "cloud-devops",
+      "name": "Cloud & DevOps",
+      "path": "skills/cloud-devops/SKILL.md"
+    },
+    {
+      "id": "ai-machine-learning",
+      "name": "AI & Machine Learning",
+      "path": "skills/ai-machine-learning/SKILL.md"
+    },
+    {
+      "id": "data-engineering",
+      "name": "Data Engineering",
+      "path": "skills/data-engineering/SKILL.md"
+    },
+    {
+      "id": "mobile-technologies",
+      "name": "Mobile Technologies",
+      "path": "skills/mobile-technologies/SKILL.md"
+    },
+    {
+      "id": "leadership-skills",
+      "name": "Leadership & Specialized Skills",
+      "path": "skills/leadership-skills/SKILL.md"
+    }
+  ],
+  "commands": [
+    {
+      "id": "explore",
+      "name": "Explore Roadmaps",
+      "path": "commands/explore.md"
+    },
+    {
+      "id": "learn",
+      "name": "Start Learning Path",
+      "path": "commands/learn.md"
+    },
+    {
+      "id": "assess",
+      "name": "Self-Assessment",
+      "path": "commands/assess.md"
+    },
+    {
+      "id": "projects",
+      "name": "Browse Projects",
+      "path": "commands/projects.md"
+    },
+    {
+      "id": "career-path",
+      "name": "Career Path Builder",
+      "path": "commands/career-path.md"
+    }
+  ]
+}
