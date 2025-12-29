@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-go",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "go-development-assistant",
+      "source": "./",
+      "description": "Claude Code plugin for go development",
+      "version": "1.0.0"
+    }
+  ]
+}

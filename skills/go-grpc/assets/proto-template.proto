@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package api;
+option go_package = "github.com/user/project/pb";
+
+service MyService {
+    rpc GetItem(GetItemRequest) returns (GetItemResponse);
+    rpc ListItems(ListItemsRequest) returns (stream Item);
+}
+
+message Item {
+    int64 id = 1;
+    string name = 2;
+}
+
+message GetItemRequest {
+    int64 id = 1;
+}
+
+message GetItemResponse {
+    Item item = 1;
+}
+
+message ListItemsRequest {}

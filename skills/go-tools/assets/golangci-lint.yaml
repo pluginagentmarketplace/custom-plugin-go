@@ -1,0 +1,21 @@
+linters:
+  enable:
+    - gofmt
+    - govet
+    - errcheck
+    - staticcheck
+    - gosimple
+    - ineffassign
+    - unused
+    - misspell
+
+linters-settings:
+  govet:
+    check-shadowing: true
+  errcheck:
+    check-blank: true
+    
+run:
+  timeout: 5m
+  skip-dirs:
+    - vendor

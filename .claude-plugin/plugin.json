@@ -1,121 +1,56 @@
 {
-  "name": "developer-roadmap",
-  "version": "1.0.0",
-  "description": "Comprehensive learning platform with 69+ developer roadmaps and 7 specialized agents to guide your career growth across full-stack development, AI/ML, DevOps, data engineering, mobile development, and leadership roles",
+  "schema_version": "1.0.0",
+  "name": "go-development-assistant",
+  "version": "2.0.0",
+  "description": "Comprehensive Go (Golang) development plugin with 8 specialized agents and 12 Golden Format skills for mastering Go programming",
+  "author": {
+    "name": "Dr. Umit Kacar & Muhsin Elcicek",
+    "email": "kacarumit.phd@gmail.com"
+  },
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-go",
+  "license": "SEE LICENSE IN LICENSE",
   "keywords": [
-    "learning",
-    "career-path",
-    "developer-roadmap",
-    "skills",
-    "training",
-    "agents",
-    "web-development",
-    "ai-ml",
-    "devops",
-    "data-engineering",
-    "mobile",
-    "leadership"
+    "go",
+    "golang",
+    "goroutines",
+    "channels",
+    "concurrency",
+    "gin",
+    "grpc",
+    "testing",
+    "microservices"
   ],
-  "repository": "https://github.com/kamranahmedse/developer-roadmap",
   "agents": [
-    {
-      "id": "web-development",
-      "name": "Web Development Expert",
-      "path": "agents/01-web-development.md"
-    },
-    {
-      "id": "programming-languages",
-      "name": "Programming Languages Master",
-      "path": "agents/02-programming-languages.md"
-    },
-    {
-      "id": "cloud-devops",
-      "name": "Cloud & DevOps Specialist",
-      "path": "agents/03-cloud-devops.md"
-    },
-    {
-      "id": "ai-machine-learning",
-      "name": "AI & Machine Learning Engineer",
-      "path": "agents/04-ai-machine-learning.md"
-    },
-    {
-      "id": "data-engineering",
-      "name": "Data Engineering & Databases",
-      "path": "agents/05-data-engineering.md"
-    },
-    {
-      "id": "mobile-technologies",
-      "name": "Mobile & Emerging Technologies",
-      "path": "agents/06-mobile-technologies.md"
-    },
-    {
-      "id": "leadership-roles",
-      "name": "Leadership & Specialized Roles",
-      "path": "agents/07-leadership-roles.md"
-    }
+    "./agents/01-go-fundamentals.md",
+    "./agents/02-go-types.md",
+    "./agents/03-go-concurrency.md",
+    "./agents/04-go-packages.md",
+    "./agents/05-go-web.md",
+    "./agents/06-go-database.md",
+    "./agents/07-go-testing.md",
+    "./agents/08-go-advanced.md"
   ],
   "skills": [
-    {
-      "id": "web-development",
-      "name": "Web Development Skills",
-      "path": "skills/web-development/SKILL.md"
-    },
-    {
-      "id": "programming-languages",
-      "name": "Programming Languages",
-      "path": "skills/programming-languages/SKILL.md"
-    },
-    {
-      "id": "cloud-devops",
-      "name": "Cloud & DevOps",
-      "path": "skills/cloud-devops/SKILL.md"
-    },
-    {
-      "id": "ai-machine-learning",
-      "name": "AI & Machine Learning",
-      "path": "skills/ai-machine-learning/SKILL.md"
-    },
-    {
-      "id": "data-engineering",
-      "name": "Data Engineering",
-      "path": "skills/data-engineering/SKILL.md"
-    },
-    {
-      "id": "mobile-technologies",
-      "name": "Mobile Technologies",
-      "path": "skills/mobile-technologies/SKILL.md"
-    },
-    {
-      "id": "leadership-skills",
-      "name": "Leadership & Specialized Skills",
-      "path": "skills/leadership-skills/SKILL.md"
-    }
+    "./skills/go-syntax/SKILL.md",
+    "./skills/go-types/SKILL.md",
+    "./skills/go-concurrency/SKILL.md",
+    "./skills/go-packages/SKILL.md",
+    "./skills/go-stdlib/SKILL.md",
+    "./skills/go-http/SKILL.md",
+    "./skills/go-database/SKILL.md",
+    "./skills/go-testing/SKILL.md",
+    "./skills/go-tools/SKILL.md",
+    "./skills/go-gin/SKILL.md",
+    "./skills/go-grpc/SKILL.md",
+    "./skills/go-patterns/SKILL.md"
   ],
   "commands": [
-    {
-      "id": "explore",
-      "name": "Explore Roadmaps",
-      "path": "commands/explore.md"
-    },
-    {
-      "id": "learn",
-      "name": "Start Learning Path",
-      "path": "commands/learn.md"
-    },
-    {
-      "id": "assess",
-      "name": "Self-Assessment",
-      "path": "commands/assess.md"
-    },
-    {
-      "id": "projects",
-      "name": "Browse Projects",
-      "path": "commands/projects.md"
-    },
-    {
-      "id": "career-path",
-      "name": "Career Path Builder",
-      "path": "commands/career-path.md"
-    }
-  ]
+    "./commands/go-check.md",
+    "./commands/go-new.md",
+    "./commands/go-build.md",
+    "./commands/go-debug.md"
+  ],
+  "hooks": {
+    "hooks_config_path": "./hooks/hooks.json"
+  }
 }

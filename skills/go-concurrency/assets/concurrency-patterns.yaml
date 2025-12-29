@@ -1,0 +1,35 @@
+# Go Concurrency Patterns
+
+patterns:
+  worker_pool:
+    description: Fixed number of goroutines processing jobs
+    use_case: CPU-bound tasks, rate limiting
+    components: [jobs channel, results channel, WaitGroup]
+
+  fan_out_fan_in:
+    description: Multiple workers, merged results
+    use_case: Parallel processing with aggregation
+    components: [multiple input channels, single output]
+
+  pipeline:
+    description: Series of stages connected by channels
+    use_case: Data transformation workflows
+    components: [generator, processors, consumer]
+
+  semaphore:
+    description: Limit concurrent access
+    use_case: Resource limiting
+    components: [buffered channel]
+
+  pub_sub:
+    description: Publisher broadcasts to subscribers
+    use_case: Event distribution
+    components: [topic channels, subscriber registry]
+
+synchronization:
+  - sync.Mutex: Exclusive access
+  - sync.RWMutex: Multiple readers, single writer
+  - sync.WaitGroup: Wait for goroutines
+  - sync.Once: Run exactly once
+  - sync.Cond: Conditional wait
+  - sync.Pool: Object reuse

@@ -1,0 +1,33 @@
+{
+  "name": "go-development-assistant",
+  "version": "2.0.0",
+  "description": "Comprehensive Go (Golang) development plugin with 8 specialized agents and 12 Golden Format skills",
+  "author": {
+    "name": "Dr. Umit Kacar & Muhsin Elcicek",
+    "email": "kacarumit.phd@gmail.com"
+  },
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-go",
+  "license": "MIT",
+  "keywords": [
+    "go",
+    "golang",
+    "goroutines",
+    "channels",
+    "concurrency",
+    "gin",
+    "grpc",
+    "testing",
+    "microservices",
+    "roadmap.sh"
+  ],
+  "categories": [
+    "programming-language",
+    "backend",
+    "microservices"
+  ],
+  "sasmp_version": "1.3.0",
+  "eqhm_enabled": true,
+  "agents_count": 8,
+  "skills_count": 12,
+  "commands_count": 4
+}

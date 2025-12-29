@@ -1,0 +1,21 @@
+creational:
+  - factory: "Object creation through factory function"
+  - singleton: "Single instance via sync.Once"
+  - builder: "Step-by-step construction"
+  - functional_options: "Flexible configuration"
+
+structural:
+  - adapter: "Interface compatibility"
+  - decorator: "Add behavior dynamically"
+  - repository: "Data access abstraction"
+
+behavioral:
+  - strategy: "Interchangeable algorithms"
+  - observer: "Event notification"
+  - chain: "Request handling chain"
+
+concurrency:
+  - worker_pool: "Fixed goroutine pool"
+  - fan_out_fan_in: "Parallel with merge"
+  - pipeline: "Staged processing"
+  - circuit_breaker: "Fault tolerance"

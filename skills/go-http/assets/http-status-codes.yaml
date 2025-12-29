@@ -1,0 +1,15 @@
+success:
+  200: OK
+  201: Created
+  204: NoContent
+client_error:
+  400: BadRequest
+  401: Unauthorized
+  403: Forbidden
+  404: NotFound
+  409: Conflict
+  422: UnprocessableEntity
+server_error:
+  500: InternalServerError
+  502: BadGateway
+  503: ServiceUnavailable

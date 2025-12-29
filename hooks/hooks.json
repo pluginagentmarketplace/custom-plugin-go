@@ -1,34 +1,3 @@
 {
-  "hooks": {
-    "plugin-loaded": {
-      "description": "Triggered when plugin is loaded",
-      "commands": [
-        "echo 'Developer Roadmap Plugin loaded successfully! 🚀'"
-      ]
-    },
-    "command-executed": {
-      "description": "Log command execution for analytics",
-      "commands": [
-        "echo 'Command executed: {{command}} at {{timestamp}}'"
-      ]
-    },
-    "user-assessment-complete": {
-      "description": "Suggest next steps based on assessment results",
-      "commands": [
-        "echo 'Great job assessing your skills! Ready to learn more? Use /learn [domain]'"
-      ]
-    }
-  },
-  "automations": {
-    "learning-reminders": {
-      "enabled": true,
-      "description": "Periodic learning progress checks",
-      "frequency": "weekly"
-    },
-    "project-suggestions": {
-      "enabled": true,
-      "description": "Suggest projects based on skill level",
-      "trigger": "on-level-change"
-    }
-  }
+  "hooks": {}
 }
