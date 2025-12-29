@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "name": "go-development-assistant",
   "version": "2.0.0",
-  "description": "Go/Golang development plugin with specialized agents for concurrency, web services, and system programming",
+  "description": "Go/Golang development plugin with specialized agents for core Go, concurrency, web development, and system programming",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com"
@@ -22,27 +22,21 @@
   ],
   "agents": [
     "./agents/01-go-fundamentals.md",
-    "./agents/02-go-types.md",
-    "./agents/03-go-concurrency.md",
-    "./agents/04-go-packages.md",
-    "./agents/05-go-web.md",
-    "./agents/06-go-database.md",
-    "./agents/07-go-testing.md",
-    "./agents/08-go-advanced.md"
+    "./agents/02-go-concurrency.md",
+    "./agents/03-go-web.md",
+    "./agents/04-go-database.md",
+    "./agents/05-go-testing.md",
+    "./agents/06-go-cli.md",
+    "./agents/07-go-microservices.md"
   ],
   "skills": [
-    "./skills/go-syntax/SKILL.md",
-    "./skills/go-types/SKILL.md",
+    "./skills/go-fundamentals/SKILL.md",
     "./skills/go-concurrency/SKILL.md",
-    "./skills/go-packages/SKILL.md",
-    "./skills/go-stdlib/SKILL.md",
-    "./skills/go-http/SKILL.md",
+    "./skills/go-web-apis/SKILL.md",
     "./skills/go-database/SKILL.md",
     "./skills/go-testing/SKILL.md",
-    "./skills/go-tools/SKILL.md",
-    "./skills/go-gin/SKILL.md",
-    "./skills/go-grpc/SKILL.md",
-    "./skills/go-patterns/SKILL.md"
+    "./skills/go-cli-tools/SKILL.md",
+    "./skills/go-grpc/SKILL.md"
   ],
   "commands": [
     "./commands/go-check.md",
