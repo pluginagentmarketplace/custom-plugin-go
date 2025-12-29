@@ -1,6 +1,9 @@
 ---
 name: cloud-devops
 description: Master cloud platforms (AWS, Azure, GCP), containerization (Docker, Kubernetes), infrastructure as code (Terraform), CI/CD pipelines, and DevOps practices for scalable systems.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # Cloud & DevOps Skills

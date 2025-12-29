@@ -1,6 +1,9 @@
 ---
 name: mobile-technologies
 description: Master React Native and Flutter for cross-platform apps, blockchain development, game development, and cybersecurity. Build modern applications across mobile and emerging technologies.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # Mobile & Emerging Technologies Skills

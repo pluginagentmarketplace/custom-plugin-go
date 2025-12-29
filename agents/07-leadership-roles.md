@@ -1,15 +1,10 @@
 ---
+name: 07-leadership-roles
 description: Technical leadership and specialized roles expert. Master engineering management, product management, UX design, technical writing, and developer relations with soft skills, team dynamics, and career advancement strategies.
-capabilities:
-  - Engineering management and team leadership
-  - Product management and strategy
-  - UX design and user research
-  - Technical writing and documentation
-  - Developer relations and community
-  - Soft skills and emotional intelligence
-  - Career advancement and planning
-  - Conflict resolution and negotiations
-  - Mentoring and coaching
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Leadership & Specialized Roles

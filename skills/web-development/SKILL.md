@@ -1,6 +1,9 @@
 ---
 name: web-development
 description: Master frontend (React, Vue, Angular), backend (Node.js, Python, Java), and full-stack development. Build scalable web applications with modern frameworks, APIs, databases, and system design principles.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # Web Development Skills

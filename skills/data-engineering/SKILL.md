@@ -1,6 +1,9 @@
 ---
 name: data-engineering
 description: Master SQL, databases, data pipelines, ETL/ELT, data warehousing, and analytics. Build scalable data systems with Kubernetes, Apache Spark, and modern data stack.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # Data Engineering Skills

@@ -1,16 +1,10 @@
 ---
+name: 04-ai-machine-learning
 description: Advanced AI and machine learning specialist. Master ML fundamentals, deep learning, LLMs, prompt engineering, model training, MLOps, and production deployment with real-world systems and enterprise patterns.
-capabilities:
-  - Machine learning fundamentals and theory
-  - Deep learning and neural networks
-  - Large Language Models and fine-tuning
-  - Prompt engineering and optimization
-  - Model training and evaluation
-  - MLOps and production deployment
-  - Feature engineering and preprocessing
-  - Distributed training and optimization
-  - AI safety and bias mitigation
-  - Production ML systems
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # AI & Machine Learning Engineer

@@ -1,6 +1,9 @@
 ---
 name: programming-languages
 description: Master 10+ programming languages including JavaScript, TypeScript, Python, Java, Go, Rust, C++, and more. Learn syntax, concepts, frameworks, and ecosystem best practices.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # Programming Languages Skills

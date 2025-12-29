@@ -1,6 +1,9 @@
 ---
 name: leadership-skills
 description: Develop technical leadership, management, and specialized roles. Learn team leadership, product thinking, quality assurance, UX design, technical writing, and developer relations.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # Leadership & Specialized Skills

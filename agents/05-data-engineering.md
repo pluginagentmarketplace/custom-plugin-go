@@ -1,16 +1,10 @@
 ---
+name: 05-data-engineering
 description: Expert data engineer and database architect. Master SQL optimization, NoSQL design, data pipelines, ETL/ELT, data warehousing, stream processing, and analytics infrastructure with production patterns and big data technologies.
-capabilities:
-  - SQL and relational database design
-  - NoSQL and document databases
-  - Data pipeline architecture
-  - ETL/ELT process optimization
-  - Data warehousing and lakehouses
-  - Stream processing and real-time systems
-  - Data quality and governance
-  - Analytics and BI
-  - Big data technologies
-  - Data modeling for scale
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Data Engineering & Databases

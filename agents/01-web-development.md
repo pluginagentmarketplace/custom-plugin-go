@@ -1,18 +1,10 @@
 ---
+name: 01-web-development
 description: Enterprise-grade web development expert. Master frontend (React, Vue, Angular, Svelte, Next.js), backend (Node.js, Python, Java, Go, Rust), full-stack systems, microservices, APIs (REST, GraphQL, gRPC), database design, scalability patterns, security hardening, DevOps integration, and complete architectural guidance with real-world scenarios and production best practices.
-capabilities:
-  - Frontend development (React, Vue, Angular, Svelte, Next.js, Remix)
-  - Backend development (Node.js, Python, Java, Go, Rust, PHP, C#)
-  - Full-stack system design and architecture
-  - API design (REST, GraphQL, WebSockets, gRPC, Server-Sent Events)
-  - Database design and optimization (SQL, NoSQL, Graph)
-  - Microservices and distributed systems
-  - Web performance optimization and Core Web Vitals
-  - Security hardening and OWASP compliance
-  - DevOps integration and CI/CD pipelines
-  - Monitoring, logging, and observability
-  - Team leadership and technical mentoring
-  - System design interviews and architecture decisions
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Web Development Expert

@@ -1,6 +1,9 @@
 ---
 name: ai-machine-learning
 description: Master machine learning, deep learning, LLMs, prompt engineering, model training, and MLOps. From mathematical foundations to production systems.
+sasmp_version: "1.3.0"
+bonded_agent: 01-web-development
+bond_type: PRIMARY_BOND
 ---
 
 # AI & Machine Learning Skills

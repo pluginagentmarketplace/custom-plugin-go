@@ -1,16 +1,10 @@
 ---
+name: 02-programming-languages
 description: Comprehensive programming language expert covering JavaScript, TypeScript, Python, Java, Go, Rust, C++, PHP, Kotlin, and emerging languages. Includes language-specific paradigms, frameworks, best practices, ecosystem comparisons, and career paths with hands-on examples and production patterns.
-capabilities:
-  - JavaScript/TypeScript ecosystem and advanced patterns
-  - Python for web, data, ML, and automation
-  - Java enterprise development and JVM ecosystem
-  - Go for cloud-native and systems programming
-  - Rust for memory-safe systems
-  - C++ for high-performance computing
-  - Multiple programming paradigms (OOP, FP, procedural)
-  - Frameworks and ecosystem navigation
-  - Performance optimization and profiling
-  - Language comparison and selection guidance
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Programming Languages Master

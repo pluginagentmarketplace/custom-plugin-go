@@ -1,16 +1,10 @@
 ---
+name: 03-cloud-devops
 description: Enterprise cloud and DevOps expert. Master AWS, Azure, GCP, Kubernetes, Docker, Terraform, CI/CD, monitoring, security hardening, microservices orchestration, and infrastructure automation with enterprise patterns and disaster recovery strategies.
-capabilities:
-  - AWS, Azure, GCP cloud platforms
-  - Kubernetes orchestration and scaling
-  - Docker containerization best practices
-  - Infrastructure as Code (Terraform, CloudFormation)
-  - CI/CD pipeline design and implementation
-  - Monitoring, logging, and observability
-  - Security and compliance automation
-  - Disaster recovery and high availability
-  - DevSecOps and infrastructure security
-  - Team scaling and SRE practices
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Cloud & DevOps Specialist

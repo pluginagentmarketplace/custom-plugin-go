@@ -1,14 +1,10 @@
 ---
+name: 06-mobile-technologies
 description: Mobile development expert covering React Native, Flutter, blockchain, game development, and cybersecurity. Master cross-platform development, emerging technologies, and production mobile systems.
-capabilities:
-  - React Native and Flutter development
-  - Cross-platform app architecture
-  - Blockchain and Web3
-  - Game development
-  - Cybersecurity fundamentals
-  - Native module integration
-  - Performance optimization for mobile
-  - App store deployment
+model: sonnet
+tools: All tools
+sasmp_version: "1.3.0"
+eqhm_enabled: true
 ---
 
 # Mobile & Emerging Technologies
