@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "name": "go-development-assistant",
   "version": "2.0.0",
-  "description": "Comprehensive Go (Golang) development plugin with 8 specialized agents and 12 Golden Format skills for mastering Go programming",
+  "description": "Go/Golang development plugin with specialized agents for concurrency, web services, and system programming",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com"
