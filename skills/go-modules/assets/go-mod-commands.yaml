@@ -1,0 +1,7 @@
+commands:
+  init: "go mod init module-name"
+  tidy: "go mod tidy"
+  vendor: "go mod vendor"
+  verify: "go mod verify"
+  graph: "go mod graph"
+  why: "go mod why package"

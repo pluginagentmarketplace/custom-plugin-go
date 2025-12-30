@@ -1,0 +1,5 @@
+profiling:
+  cpu: "go tool pprof http://localhost:6060/debug/pprof/profile"
+  memory: "go tool pprof http://localhost:6060/debug/pprof/heap"
+  trace: "go tool trace trace.out"
+benchmarking: "go test -bench=. -benchmem"

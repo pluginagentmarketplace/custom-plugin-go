@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
   "name": "go-development-assistant",
-  "version": "2.0.0",
-  "description": "Go/Golang development plugin with specialized agents for core Go, concurrency, web development, and system programming",
+  "version": "2.1.0",
+  "description": "Comprehensive Go/Golang development plugin with 8 specialized agents and 12 Golden Format skills for concurrency, web development, DevOps, and cloud-native applications",
   "author": {
     "name": "Dr. Umit Kacar & Muhsin Elcicek",
     "email": "kacarumit.phd@gmail.com"
@@ -18,7 +18,9 @@
     "gin",
     "grpc",
     "testing",
-    "microservices"
+    "microservices",
+    "kubernetes",
+    "docker"
   ],
   "agents": [
     "./agents/01-go-fundamentals.md",
@@ -27,7 +29,8 @@
     "./agents/04-go-database.md",
     "./agents/05-go-testing.md",
     "./agents/06-go-cli.md",
-    "./agents/07-go-microservices.md"
+    "./agents/07-go-microservices.md",
+    "./agents/08-go-devops.md"
   ],
   "skills": [
     "./skills/go-fundamentals/SKILL.md",
@@ -36,7 +39,12 @@
     "./skills/go-database/SKILL.md",
     "./skills/go-testing/SKILL.md",
     "./skills/go-cli-tools/SKILL.md",
-    "./skills/go-grpc/SKILL.md"
+    "./skills/go-grpc/SKILL.md",
+    "./skills/go-docker/SKILL.md",
+    "./skills/go-cli/SKILL.md",
+    "./skills/go-performance/SKILL.md",
+    "./skills/go-kubernetes/SKILL.md",
+    "./skills/go-modules/SKILL.md"
   ],
   "commands": [
     "./commands/go-check.md",
