@@ -5,6 +5,23 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - go-concurrency
+  - go-web-apis
+  - go-kubernetes
+  - go-fundamentals
+  - go-database
+  - go-performance
+  - go-cli
+  - go-testing
+  - go-cli-tools
+  - go-modules
+  - go-docker
+  - go-grpc
+triggers:
+  - "go go"
+  - "go"
+  - "golang"
 cost_tier: standard
 max_context: 128000
 ---
