@@ -1,50 +1,163 @@
-# Go Development Assistant Plugin
+<div align="center">
 
-[![SASMP v1.3.0](https://img.shields.io/badge/SASMP-v1.3.0-blue.svg)](https://github.com/pluginagentmarketplace)
-[![Go](https://img.shields.io/badge/Go-1.21+-00ADD8?logo=go)](https://go.dev)
+<!-- Animated Typing Banner -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Go+Development+Assistant;8+Agents+%7C+12+Skills;Claude+Code+Plugin" alt="Go Development Assistant" />
 
-Comprehensive Go (Golang) development plugin with 8 specialized agents and 12 Golden Format skills for mastering Go programming, inspired by [roadmap.sh/golang](https://roadmap.sh/golang).
+<br/>
 
-## 🎯 Overview
+<!-- Badge Row 1: Status Badges -->
+[![Version](https://img.shields.io/badge/Version-2.1.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-go/releases)
+[![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
+[![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
-This plugin provides complete coverage of Go development, from fundamentals to advanced topics like concurrency, microservices, and design patterns.
+<!-- Badge Row 2: Content Badges -->
+[![Agents](https://img.shields.io/badge/Agents-8-orange?style=flat-square&logo=robot)](#-agents)
+[![Skills](https://img.shields.io/badge/Skills-12-purple?style=flat-square&logo=lightning)](#-skills)
+[![Commands](https://img.shields.io/badge/Commands-4-green?style=flat-square&logo=terminal)](#-commands)
 
-## 🤖 Agents (8)
+<br/>
 
-| Agent | Description | Primary Skills |
-|-------|-------------|----------------|
-| **go-fundamentals** | Master Go basics - syntax, variables, control flow | go-syntax, go-stdlib |
-| **go-types** | Deep dive into Go type system | go-types |
-| **go-concurrency** | Goroutines, channels, and sync | go-concurrency |
-| **go-packages** | Modules and dependency management | go-packages |
-| **go-web** | HTTP servers and REST APIs | go-http, go-gin |
-| **go-database** | SQL, GORM, and data persistence | go-database |
-| **go-testing** | Testing, benchmarks, and coverage | go-testing |
-| **go-advanced** | Profiling, patterns, and optimization | go-patterns, go-grpc |
+<!-- Quick CTA Row -->
+[📦 **Install Now**](#-quick-start) · [🤖 **Explore Agents**](#-agents) · [📖 **Documentation**](#-documentation) · [⭐ **Star this repo**](https://github.com/pluginagentmarketplace/custom-plugin-go)
 
-## 🛠️ Skills (12)
+---
 
-### Core Language
-- `go-syntax` - Variables, control flow, functions
-- `go-types` - Structs, interfaces, pointers, slices, maps
-- `go-concurrency` - Goroutines, channels, select, sync
+### What is this?
 
-### Ecosystem
-- `go-packages` - Modules, dependencies, project structure
-- `go-stdlib` - Standard library essentials
-- `go-tools` - Build, format, lint, debug
+> **Go Development Assistant** is a Claude Code plugin with **8 agents** and **12 skills** for Go development. Master concurrency, web development, microservices, and cloud-native applications with expert AI agents.
 
-### Web Development
-- `go-http` - HTTP servers, clients, middleware
-- `go-gin` - Gin framework for REST APIs
-- `go-grpc` - gRPC and Protocol Buffers
+</div>
 
-### Data & Patterns
-- `go-database` - SQL, GORM, transactions
-- `go-testing` - Unit tests, benchmarks, mocking
-- `go-patterns` - Design patterns in Go
+---
 
-## 📋 Commands (4)
+## 📑 Table of Contents
+
+<details>
+<summary>Click to expand</summary>
+
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Agents](#-agents)
+- [Skills](#-skills)
+- [Commands](#-commands)
+- [Documentation](#-documentation)
+- [Contributing](#-contributing)
+- [License](#-license)
+
+</details>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Claude Code CLI v2.0.27+
+- Active Claude subscription
+
+### Installation (Choose One)
+
+<details open>
+<summary><strong>Option 1: From Marketplace (Recommended)</strong></summary>
+
+```bash
+# Step 1️⃣ Add the marketplace
+/plugin add marketplace pluginagentmarketplace/custom-plugin-go
+
+# Step 2️⃣ Install the plugin
+/plugin install go-development-assistant@pluginagentmarketplace-go
+
+# Step 3️⃣ Restart Claude Code
+# Close and reopen your terminal/IDE
+```
+
+</details>
+
+<details>
+<summary><strong>Option 2: Local Installation</strong></summary>
+
+```bash
+# Clone the repository
+git clone https://github.com/pluginagentmarketplace/custom-plugin-go.git
+cd custom-plugin-go
+
+# Load locally
+/plugin load .
+
+# Restart Claude Code
+```
+
+</details>
+
+### ✅ Verify Installation
+
+After restart, you should see these agents:
+
+```
+go-development-assistant:01-go-fundamentals
+go-development-assistant:02-go-concurrency
+go-development-assistant:03-go-web
+go-development-assistant:04-go-database
+go-development-assistant:05-go-testing
+go-development-assistant:06-go-cli
+go-development-assistant:07-go-microservices
+go-development-assistant:08-go-devops
+```
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🤖 **8 Agents** | Specialized AI agents for Go tasks |
+| 🛠️ **12 Skills** | Reusable capabilities with Golden Format |
+| ⌨️ **4 Commands** | Quick slash commands |
+| 🔄 **SASMP v1.3.0** | Full protocol compliance |
+| 🐹 **Cloud Native** | Goroutines, channels, Kubernetes ready |
+
+---
+
+## 🤖 Agents
+
+### 8 Specialized Agents
+
+| # | Agent | Purpose |
+|---|-------|---------|
+| 1 | **01-go-fundamentals** | Go basics, syntax, variables, control flow |
+| 2 | **02-go-concurrency** | Goroutines, channels, sync primitives |
+| 3 | **03-go-web** | HTTP servers, Gin, REST APIs |
+| 4 | **04-go-database** | SQL, GORM, data persistence |
+| 5 | **05-go-testing** | Unit tests, benchmarks, coverage |
+| 6 | **06-go-cli** | CLI application development |
+| 7 | **07-go-microservices** | gRPC, service architecture |
+| 8 | **08-go-devops** | Docker, Kubernetes, deployment |
+
+---
+
+## 🛠️ Skills
+
+### Available Skills
+
+| Skill | Description | Invoke |
+|-------|-------------|--------|
+| `go-fundamentals` | Go language basics | `Skill("go-development-assistant:go-fundamentals")` |
+| `go-concurrency` | Goroutines and channels | `Skill("go-development-assistant:go-concurrency")` |
+| `go-web-apis` | HTTP and REST development | `Skill("go-development-assistant:go-web-apis")` |
+| `go-database` | SQL and ORM patterns | `Skill("go-development-assistant:go-database")` |
+| `go-testing` | Testing strategies | `Skill("go-development-assistant:go-testing")` |
+| `go-cli-tools` | CLI development | `Skill("go-development-assistant:go-cli-tools")` |
+| `go-grpc` | gRPC and Protocol Buffers | `Skill("go-development-assistant:go-grpc")` |
+| `go-docker` | Containerization | `Skill("go-development-assistant:go-docker")` |
+| `go-cli` | Command-line interfaces | `Skill("go-development-assistant:go-cli")` |
+| `go-performance` | Optimization techniques | `Skill("go-development-assistant:go-performance")` |
+| `go-kubernetes` | K8s deployment | `Skill("go-development-assistant:go-kubernetes")` |
+| `go-modules` | Module management | `Skill("go-development-assistant:go-modules")` |
+
+---
+
+## ⌨️ Commands
 
 | Command | Description |
 |---------|-------------|
@@ -53,62 +166,106 @@ This plugin provides complete coverage of Go development, from fundamentals to a
 | `/go-build` | Build for multiple platforms |
 | `/go-debug` | Debug with Delve |
 
-## 🚀 Quick Start
+---
 
-```bash
-# Install plugin
-claude plugin install go-development-assistant
+## 📚 Documentation
 
-# Create new project
-/go-new myapi api
+| Document | Description |
+|----------|-------------|
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
+| [LICENSE](LICENSE) | License information |
 
-# Run quality checks
-/go-check
+---
 
-# Build for production
-/go-build --release --platform linux
-```
+## 📁 Project Structure
 
-## 📚 Learning Path
-
-Following [roadmap.sh/golang](https://roadmap.sh/golang):
-
-1. **Fundamentals** → `go-fundamentals` agent
-2. **Type System** → `go-types` agent
-3. **Concurrency** → `go-concurrency` agent
-4. **Web Development** → `go-web` agent
-5. **Database** → `go-database` agent
-6. **Testing** → `go-testing` agent
-7. **Advanced** → `go-advanced` agent
-
-## 🏗️ Project Structure
+<details>
+<summary>Click to expand</summary>
 
 ```
 custom-plugin-go/
-├── agents/           # 8 specialized agents
-├── skills/           # 12 Golden Format skills
-│   └── skill-name/
-│       ├── SKILL.md
-│       ├── assets/
-│       ├── scripts/
-│       └── references/
-├── commands/         # 4 slash commands
-├── hooks/           # Event hooks
-└── .claude-plugin/  # Plugin manifest
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 8 agents
+├── 📁 skills/              # 12 skills (Golden Format)
+├── 📁 commands/            # 4 commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
 ```
 
-## 📖 Related Resources
+</details>
 
-- [Go Documentation](https://go.dev/doc/)
-- [Effective Go](https://go.dev/doc/effective_go)
-- [Go by Example](https://gobyexample.com/)
-- [roadmap.sh/golang](https://roadmap.sh/golang)
+---
+
+## 📅 Metadata
+
+| Field | Value |
+|-------|-------|
+| **Version** | 2.1.0 |
+| **Last Updated** | 2025-12-31 |
+| **Status** | Production Ready |
+| **SASMP** | v1.3.0 |
+| **Agents** | 8 |
+| **Skills** | 12 |
+| **Commands** | 4 |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md).
+
+1. Fork the repository
+2. Create your feature branch
+3. Follow the Golden Format for new skills
+4. Submit a pull request
+
+---
+
+## ⚠️ Security
+
+> **Important:** This repository contains third-party code and dependencies.
+>
+> - ✅ Always review code before using in production
+> - ✅ Check dependencies for known vulnerabilities
+> - ✅ Follow security best practices
+> - ✅ Report security issues privately via [Issues](../../issues)
+
+---
 
 ## 📝 License
 
-MIT License - See LICENSE file
+Copyright © 2025 **Dr. Umit Kacar** & **Muhsin Elcicek**
 
-## 👥 Authors
+Custom License - See [LICENSE](LICENSE) for details.
 
-- Dr. Umit Kacar & Muhsin Elcicek
-- Contact: kacarumit.phd@gmail.com
+---
+
+## 👥 Contributors
+
+<table>
+<tr>
+<td align="center">
+<strong>Dr. Umit Kacar</strong><br/>
+Senior AI Researcher & Engineer
+</td>
+<td align="center">
+<strong>Muhsin Elcicek</strong><br/>
+Senior Software Architect
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the Claude Code Community**
+
+[![GitHub](https://img.shields.io/badge/GitHub-pluginagentmarketplace-black?style=for-the-badge&logo=github)](https://github.com/pluginagentmarketplace)
+
+</div>
