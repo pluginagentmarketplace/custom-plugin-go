@@ -63,7 +63,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-go
+/plugin marketplace add pluginagentmarketplace/custom-plugin-go
 
 # Step 2️⃣ Install the plugin
 /plugin install go-development-assistant@pluginagentmarketplace-go

@@ -51,8 +51,5 @@
     "./commands/go-new.md",
     "./commands/go-build.md",
     "./commands/go-debug.md"
-  ],
-  "hooks": {
-    "hooks_config_path": "./hooks/hooks.json"
-  }
+  ]
 }
